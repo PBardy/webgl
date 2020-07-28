@@ -1,0 +1,78 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.Hbox, .Vbox {
+  display: flex;
+}
+
+.Hbox {
+  flex-direction: row;
+}
+
+.Hbox.Left, .Vbox.Top {
+  justify-content: flex-start;
+}
+
+.Hbox.Right, .Vbox.Bottom {
+  justify-content: flex-end;
+}
+
+.Hbox.HCenter, .Vbox.VCenter {
+  justify-content: center;
+}
+
+.Hbox.VCenter, .Vbox.HCenter {
+  align-items: center;
+}
+
+.Vbox {
+  flex-direction: column;
+}
+
+.Hbox.Top, .Vbox.Left {
+  align-items: flex-start;
+}
+
+.Hbox.Bottom, .Vbox.Right {
+  align-items: flex-end;
+}
+
+.Center {
+  align-items: center;
+  justify-content: center;
+}
+
+.Expand {
+  flex: 1;
+}
+
+.Fill {
+  width: 100%;
+  height: 100%;
+}
+
+.Padding {
+  width: 1em;
+  height: 1em;
+}

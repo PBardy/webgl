@@ -1,0 +1,42 @@
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  display:  none;
+}
+
+
+.App-Menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.App-Menu.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.App-Menu .Options > div {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+}
+
+.App-Menu .Options > div:hover {
+  color: #aaa;
+}
