@@ -33,6 +33,8 @@ export default class Player {
   }
 
   updateView(camera) {
+    if(this.model == null) return
+    
     this.model.position.set(camera.position.x + Math.sin(camera.rotation.y), camera.position.y - 1.25, camera.position.z - Math.cos(camera.rotation.z))
     this.model.rotation.set(0, camera.rotation.y, 0)
 
